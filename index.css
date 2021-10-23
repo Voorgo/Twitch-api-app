@@ -1,0 +1,142 @@
+:root {
+  --btn-color: #351e5f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+  background: #7240cd;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section {
+  height: 80%;
+}
+.title img {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  width: 800px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  user-select: none;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 30px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.btn {
+  width: calc(80% / 3);
+  height: 50px;
+  background: linear-gradient(to bottom right, #4d3677, var(--btn-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #5f5f5f;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: 0.2s transform;
+}
+
+.list {
+  width: 70%;
+  height: 55%;
+  margin-top: 40px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.streamers {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: auto;
+}
+
+.streamers li {
+  list-style: none;
+  font-size: 1.7rem;
+  background: #351e5f;
+  height: 70px;
+  color: #0be2ff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.streamers::-webkit-scrollbar {
+  display: none;
+}
+
+.offline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f81515;
+  box-shadow: 0 0 5px #f81515;
+}
+.online {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #13ef29;
+  box-shadow: 0 0 5px #13ef29;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #7240cd;
+}
+
+.active {
+  color: #0be2ff;
+  transform: translateY(5px);
+  text-shadow: 1px 1px 10px #0be2ff;
+}
